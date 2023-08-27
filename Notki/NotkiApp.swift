@@ -11,11 +11,15 @@ import SwiftUI
 struct NotkiApp: App {
     let persistenceController = PersistenceController.shared
 
+    // TODO: Sth to do
     var body: some Scene {
         WindowGroup {
-            CreateNote(viewModel: .init())
+            ContentView(message: "Marek napiera!")
+//            CreateNote(viewModel: .init())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
+        #if os(macOS)
         .windowStyle(.hiddenTitleBar)
+        #endif
     }
 }

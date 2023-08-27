@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct CreateNote: View {
-    @Environment(\.managedObjectContext) private var viewContext
     @State private var noteCount: Int = 60
-    
+
     @ObservedObject var viewModel: CreateNoteViewModel
-    
+
     @FocusState private var isTextFieldFocused: Bool {
         didSet {
             print("focus")
@@ -21,39 +20,46 @@ struct CreateNote: View {
 
     init(viewModel: CreateNoteViewModel) {
         self.viewModel = viewModel
+        print("Documents Directory: ", FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last ?? "Not Found!")
     }
 
     var body: some View {
-        ZStack {
-            HStack {
-                TextField(
-                    "Enter note and press Return",
-                    text: $viewModel.note
-                )
-                .font(.largeTitle)
-                .textFieldStyle(.plain)
-                .padding(.bottom, 15)
-                .focused($isTextFieldFocused)
-                .disableAutocorrection(true)
-                .onSubmit {
-                    print(viewModel.note)
-                }
-                .onChange(of: viewModel.note) { newValue in
-                    noteCount = 60 - Int(exactly: newValue.count)!
-                }
-                Text(String(-noteCount))
-                    .font(.title2)
-                    .foregroundColor(.accentColor)
+        NavigationView {
+            ZStack {
+                HStack {
+                    TextField(
+                        "Enter note and press Return",
+                        text: $viewModel.note
+                    )
+                    .font(.largeTitle)
+                    .textFieldStyle(.plain)
+                    .padding(.bottom, 15)
+                    .focused($isTextFieldFocused)
+                    .disableAutocorrection(true)
+                    .onSubmit {                        
+                        self.isTextFieldFocused = false // Dismiss keyboard
+                    }
+                    .onChange(of: viewModel.note) { newValue in
+                        noteCount = 60 - Int(exactly: newValue.count)!
+                    }
+                    Text(String(-noteCount))
+                        .font(.title2)
+                        .foregroundColor(.accentColor)
 
+                }
+                .frame(width: 700, height: 55)
+                .padding(.horizontal, 25)
             }
-            .frame(width: 700, height: 55)
-            .padding(.horizontal, 25)
+#if os(iOS)
+            .navigationBarTitle("Create Note")
+            .navigationBarItems(trailing: NavigationLink(destination: ContentView(message: viewModel.note)) {
+                Text("Save")
+            })
+#endif
         }
     }
 }
 
-struct CreateNote_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateNote(viewModel: .init())
-    }
+#Preview("CreateNote") {
+    CreateNote(viewModel: .init())
 }

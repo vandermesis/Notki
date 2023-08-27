@@ -12,18 +12,27 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+        sortDescriptors: [NSSortDescriptor(keyPath: \Note.date, ascending: true)],
+        animation: .default
+    )
+
+    private var notes: FetchedResults<Note>
+
+    let message: String
+
+    init(message: String) {
+        self.message = message
+    }
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
+                ForEach(notes) { note in
                     NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                        Text("Item at \(note.date!, formatter: itemFormatter)")
                     } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                        Text(note.date!, formatter: itemFormatter)
+                        Text(note.content ?? "notin")
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -36,18 +45,21 @@ struct ContentView: View {
 #endif
                 ToolbarItem {
                     Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                        Label("Add note", systemImage: "plus")
                     }
                 }
             }
-            Text("Select an item")
+            Text("Select a note")
         }
+        .onAppear(perform: addItem)
     }
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newItem = Note(context: viewContext)
+            newItem.id = UUID()
+            newItem.date = Date()
+            newItem.content = message
 
             do {
                 try viewContext.save()
@@ -62,7 +74,7 @@ struct ContentView: View {
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
+            offsets.map { notes[$0] }.forEach(viewContext.delete)
 
             do {
                 try viewContext.save()
@@ -85,6 +97,7 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView(message: "halo")
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
