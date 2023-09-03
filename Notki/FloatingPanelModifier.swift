@@ -1,5 +1,5 @@
 //
-//  AddPanelModifier.swift
+//  FloatingPanelModifier.swift
 //  Notki
 //
 //  Created by Marek Skrzelowski on 31/08/2023.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-fileprivate struct AddPanelModifier<PanelContent: View>: ViewModifier {
-    @State var panel: AddPanel<PanelContent>?
+fileprivate struct FloatingPanelModifier<PanelContent: View>: ViewModifier {
+    @State var panel: FloatingPanel<PanelContent>?
     @Binding var isPresented: Bool
     @ViewBuilder let view: () -> PanelContent
     var contentRect: CGRect = CGRect(x: 0, y: 0, width: 624, height: 512)
@@ -16,7 +16,7 @@ fileprivate struct AddPanelModifier<PanelContent: View>: ViewModifier {
     func body(content: Content) -> some View {
         content
             .onAppear {
-                panel = AddPanel(view: view, contentRect: contentRect, isPresented: $isPresented)
+                panel = FloatingPanel(view: view, contentRect: contentRect, isPresented: $isPresented)
                 panel?.center()
                 if isPresented { present() }
             }
@@ -41,6 +41,6 @@ extension View {
         contentRect: CGRect = CGRect(x: 0, y: 0, width: 624, height: 512),
         @ViewBuilder content: @escaping () -> Content
     ) -> some View {
-        self.modifier(AddPanelModifier(isPresented: isPresented, view: content, contentRect: contentRect))
+        self.modifier(FloatingPanelModifier(isPresented: isPresented, view: content, contentRect: contentRect))
     }
 }

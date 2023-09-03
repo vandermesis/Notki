@@ -1,5 +1,5 @@
 //
-//  AddPanel.swift
+//  FloatingPanel.swift
 //  Notki
 //
 //  Created by Marek Skrzelowski on 31/08/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class AddPanel<Content: View>: NSPanel {
+final class FloatingPanel<Content: View>: NSPanel {
     @Binding var isPresented: Bool
 
     init(
