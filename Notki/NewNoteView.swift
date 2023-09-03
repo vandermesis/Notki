@@ -15,13 +15,7 @@ struct NewNoteView: View {
             showingPanel.toggle()
         }
         .floatingPanel(isPresented: $showingPanel) {
-            ZStack {
-                Rectangle()
-                    .fill(.white)
-                Text("I'm floating panel. Click anywhere to dismiss me.")
-                    .font(.title)
-                    .foregroundStyle(.blue)
-            }
+            
         }
     }
 }
