@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2638638028E91D4000EABC60 /* CreateNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638637F28E91D4000EABC60 /* CreateNoteViewModel.swift */; };
+		26AF3B7728DE9B4400C12A3D /* NotkiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF3B7628DE9B4400C12A3D /* NotkiApp.swift */; };
+		26AF3B7E28DE9B4400C12A3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF3B7D28DE9B4400C12A3D /* ContentView.swift */; };
+		26AF3B8028DE9B4500C12A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AF3B7F28DE9B4500C12A3D /* Assets.xcassets */; };
+		26AF3B8428DE9B4500C12A3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AF3B8328DE9B4500C12A3D /* Preview Assets.xcassets */; };
+		26AF3B8E28DE9B4500C12A3D /* NotkiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF3B8D28DE9B4500C12A3D /* NotkiTests.swift */; };
+		26AF3B9828DE9B4500C12A3D /* NotkiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF3B9728DE9B4500C12A3D /* NotkiUITests.swift */; };
+		26AF3B9A28DE9B4500C12A3D /* NotkiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF3B9928DE9B4500C12A3D /* NotkiUITestsLaunchTests.swift */; };
+		BA6DEFCC2AA526F200FA4030 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6DEFCB2AA526F200FA4030 /* VisualEffectView.swift */; };
+		BAA72F352A9FEFE000FE1EC5 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA72F342A9FEFE000FE1EC5 /* NewNoteView.swift */; };
+		BADDD66C2AB5145200C16395 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDD66A2AB5145200C16395 /* FloatingPanel.swift */; };
+		BADDD66D2AB5145200C16395 /* FloatingPanelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDD66B2AB5145200C16395 /* FloatingPanelModifier.swift */; };
+		BAE7B7B52A9BFD8B006B7B09 /* CreateNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE7B7B42A9BFD8B006B7B09 /* CreateNote.swift */; };
+		BAE7B7B82A9BFD9C006B7B09 /* Notki.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAE7B7B62A9BFD9C006B7B09 /* Notki.xcdatamodeld */; };
+		BAE7B7BA2A9BFDA9006B7B09 /* NotkiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE7B7B92A9BFDA9006B7B09 /* NotkiView.swift */; };
+		BAE7B7BC2A9BFDB3006B7B09 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE7B7BB2A9BFDB3006B7B09 /* Persistence.swift */; };
+		BAE7B7BE2A9CD87E006B7B09 /* Logger+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE7B7BD2A9CD87E006B7B09 /* Logger+Filter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26AF3B8A28DE9B4500C12A3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26AF3B6B28DE9B4400C12A3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26AF3B7228DE9B4400C12A3D;
+			remoteInfo = Notki;
+		};
+		26AF3B9428DE9B4500C12A3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26AF3B6B28DE9B4400C12A3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26AF3B7228DE9B4400C12A3D;
+			remoteInfo = Notki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2638637E28E9154100EABC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2638637F28E91D4000EABC60 /* CreateNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteViewModel.swift; sourceTree = "<group>"; };
+		26AF3B7328DE9B4400C12A3D /* Notki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26AF3B7628DE9B4400C12A3D /* NotkiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotkiApp.swift; sourceTree = "<group>"; };
+		26AF3B7D28DE9B4400C12A3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26AF3B7F28DE9B4500C12A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26AF3B8128DE9B4500C12A3D /* Notki.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notki.entitlements; sourceTree = "<group>"; };
+		26AF3B8328DE9B4500C12A3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26AF3B8928DE9B4500C12A3D /* NotkiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotkiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26AF3B8D28DE9B4500C12A3D /* NotkiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotkiTests.swift; sourceTree = "<group>"; };
+		26AF3B9328DE9B4500C12A3D /* NotkiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotkiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26AF3B9728DE9B4500C12A3D /* NotkiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotkiUITests.swift; sourceTree = "<group>"; };
+		26AF3B9928DE9B4500C12A3D /* NotkiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotkiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BA6DEFCB2AA526F200FA4030 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		BAA72F342A9FEFE000FE1EC5 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
+		BADDD66A2AB5145200C16395 /* FloatingPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPanel.swift; sourceTree = "<group>"; };
+		BADDD66B2AB5145200C16395 /* FloatingPanelModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPanelModifier.swift; sourceTree = "<group>"; };
+		BAE7B7B42A9BFD8B006B7B09 /* CreateNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNote.swift; sourceTree = "<group>"; };
+		BAE7B7B72A9BFD9C006B7B09 /* Notki.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notki.xcdatamodel; sourceTree = "<group>"; };
+		BAE7B7B92A9BFDA9006B7B09 /* NotkiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotkiView.swift; sourceTree = "<group>"; };
+		BAE7B7BB2A9BFDB3006B7B09 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BAE7B7BD2A9CD87E006B7B09 /* Logger+Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Logger+Filter.swift"; path = "Extensions/Logger+Filter.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26AF3B7028DE9B4400C12A3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26AF3B8628DE9B4500C12A3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26AF3B9028DE9B4500C12A3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26AF3B6A28DE9B4400C12A3D = {
+			isa = PBXGroup;
+			children = (
+				26AF3B7528DE9B4400C12A3D /* Notki */,
+				26AF3B8C28DE9B4500C12A3D /* NotkiTests */,
+				26AF3B9628DE9B4500C12A3D /* NotkiUITests */,
+				26AF3B7428DE9B4400C12A3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26AF3B7428DE9B4400C12A3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26AF3B7328DE9B4400C12A3D /* Notki.app */,
+				26AF3B8928DE9B4500C12A3D /* NotkiTests.xctest */,
+				26AF3B9328DE9B4500C12A3D /* NotkiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26AF3B7528DE9B4400C12A3D /* Notki */ = {
+			isa = PBXGroup;
+			children = (
+				2638637E28E9154100EABC60 /* Info.plist */,
+				26AF3B7628DE9B4400C12A3D /* NotkiApp.swift */,
+				BADDD66A2AB5145200C16395 /* FloatingPanel.swift */,
+				BADDD66B2AB5145200C16395 /* FloatingPanelModifier.swift */,
+				BAE7B7BD2A9CD87E006B7B09 /* Logger+Filter.swift */,
+				BAE7B7B92A9BFDA9006B7B09 /* NotkiView.swift */,
+				26AF3B7D28DE9B4400C12A3D /* ContentView.swift */,
+				BAE7B7B42A9BFD8B006B7B09 /* CreateNote.swift */,
+				BAA72F342A9FEFE000FE1EC5 /* NewNoteView.swift */,
+				BA6DEFCB2AA526F200FA4030 /* VisualEffectView.swift */,
+				2638637F28E91D4000EABC60 /* CreateNoteViewModel.swift */,
+				BAE7B7BB2A9BFDB3006B7B09 /* Persistence.swift */,
+				26AF3B7F28DE9B4500C12A3D /* Assets.xcassets */,
+				BAE7B7B62A9BFD9C006B7B09 /* Notki.xcdatamodeld */,
+				26AF3B8128DE9B4500C12A3D /* Notki.entitlements */,
+				26AF3B8228DE9B4500C12A3D /* Preview Content */,
+			);
+			path = Notki;
+			sourceTree = "<group>";
+		};
+		26AF3B8228DE9B4500C12A3D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				26AF3B8328DE9B4500C12A3D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26AF3B8C28DE9B4500C12A3D /* NotkiTests */ = {
+			isa = PBXGroup;
+			children = (
+				26AF3B8D28DE9B4500C12A3D /* NotkiTests.swift */,
+			);
+			path = NotkiTests;
+			sourceTree = "<group>";
+		};
+		26AF3B9628DE9B4500C12A3D /* NotkiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26AF3B9728DE9B4500C12A3D /* NotkiUITests.swift */,
+				26AF3B9928DE9B4500C12A3D /* NotkiUITestsLaunchTests.swift */,
+			);
+			path = NotkiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26AF3B7228DE9B4400C12A3D /* Notki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26AF3B9D28DE9B4500C12A3D /* Build configuration list for PBXNativeTarget "Notki" */;
+			buildPhases = (
+				26AF3B6F28DE9B4400C12A3D /* Sources */,
+				26AF3B7028DE9B4400C12A3D /* Frameworks */,
+				26AF3B7128DE9B4400C12A3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notki;
+			productName = Notki;
+			productReference = 26AF3B7328DE9B4400C12A3D /* Notki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26AF3B8828DE9B4500C12A3D /* NotkiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26AF3BA028DE9B4500C12A3D /* Build configuration list for PBXNativeTarget "NotkiTests" */;
+			buildPhases = (
+				26AF3B8528DE9B4500C12A3D /* Sources */,
+				26AF3B8628DE9B4500C12A3D /* Frameworks */,
+				26AF3B8728DE9B4500C12A3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26AF3B8B28DE9B4500C12A3D /* PBXTargetDependency */,
+			);
+			name = NotkiTests;
+			productName = NotkiTests;
+			productReference = 26AF3B8928DE9B4500C12A3D /* NotkiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26AF3B9228DE9B4500C12A3D /* NotkiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26AF3BA328DE9B4500C12A3D /* Build configuration list for PBXNativeTarget "NotkiUITests" */;
+			buildPhases = (
+				26AF3B8F28DE9B4500C12A3D /* Sources */,
+				26AF3B9028DE9B4500C12A3D /* Frameworks */,
+				26AF3B9128DE9B4500C12A3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26AF3B9528DE9B4500C12A3D /* PBXTargetDependency */,
+			);
+			name = NotkiUITests;
+			productName = NotkiUITests;
+			productReference = 26AF3B9328DE9B4500C12A3D /* NotkiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26AF3B6B28DE9B4400C12A3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					26AF3B7228DE9B4400C12A3D = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					26AF3B8828DE9B4500C12A3D = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 26AF3B7228DE9B4400C12A3D;
+					};
+					26AF3B9228DE9B4500C12A3D = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 26AF3B7228DE9B4400C12A3D;
+					};
+				};
+			};
+			buildConfigurationList = 26AF3B6E28DE9B4400C12A3D /* Build configuration list for PBXProject "Notki" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				pl,
+			);
+			mainGroup = 26AF3B6A28DE9B4400C12A3D;
+			productRefGroup = 26AF3B7428DE9B4400C12A3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26AF3B7228DE9B4400C12A3D /* Notki */,
+				26AF3B8828DE9B4500C12A3D /* NotkiTests */,
+				26AF3B9228DE9B4500C12A3D /* NotkiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26AF3B7128DE9B4400C12A3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26AF3B8428DE9B4500C12A3D /* Preview Assets.xcassets in Resources */,
+				26AF3B8028DE9B4500C12A3D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26AF3B8728DE9B4500C12A3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26AF3B9128DE9B4500C12A3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26AF3B6F28DE9B4400C12A3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2638638028E91D4000EABC60 /* CreateNoteViewModel.swift in Sources */,
+				BAE7B7B52A9BFD8B006B7B09 /* CreateNote.swift in Sources */,
+				BADDD66D2AB5145200C16395 /* FloatingPanelModifier.swift in Sources */,
+				26AF3B7728DE9B4400C12A3D /* NotkiApp.swift in Sources */,
+				BAE7B7BC2A9BFDB3006B7B09 /* Persistence.swift in Sources */,
+				BA6DEFCC2AA526F200FA4030 /* VisualEffectView.swift in Sources */,
+				BAE7B7B82A9BFD9C006B7B09 /* Notki.xcdatamodeld in Sources */,
+				BADDD66C2AB5145200C16395 /* FloatingPanel.swift in Sources */,
+				BAE7B7BA2A9BFDA9006B7B09 /* NotkiView.swift in Sources */,
+				26AF3B7E28DE9B4400C12A3D /* ContentView.swift in Sources */,
+				BAA72F352A9FEFE000FE1EC5 /* NewNoteView.swift in Sources */,
+				BAE7B7BE2A9CD87E006B7B09 /* Logger+Filter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26AF3B8528DE9B4500C12A3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26AF3B8E28DE9B4500C12A3D /* NotkiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26AF3B8F28DE9B4500C12A3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26AF3B9A28DE9B4500C12A3D /* NotkiUITestsLaunchTests.swift in Sources */,
+				26AF3B9828DE9B4500C12A3D /* NotkiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26AF3B8B28DE9B4500C12A3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26AF3B7228DE9B4400C12A3D /* Notki */;
+			targetProxy = 26AF3B8A28DE9B4500C12A3D /* PBXContainerItemProxy */;
+		};
+		26AF3B9528DE9B4500C12A3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26AF3B7228DE9B4400C12A3D /* Notki */;
+			targetProxy = 26AF3B9428DE9B4500C12A3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26AF3B9B28DE9B4500C12A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26AF3B9C28DE9B4500C12A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		26AF3B9E28DE9B4500C12A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Notki/Notki.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Notki/Preview Content\"";
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Notki/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vandermesis.Notki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Debug;
+		};
+		26AF3B9F28DE9B4500C12A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Notki/Notki.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Notki/Preview Content\"";
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Notki/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vandermesis.Notki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Release;
+		};
+		26AF3BA128DE9B4500C12A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vandermesis.NotkiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Notki";
+			};
+			name = Debug;
+		};
+		26AF3BA228DE9B4500C12A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vandermesis.NotkiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Notki";
+			};
+			name = Release;
+		};
+		26AF3BA428DE9B4500C12A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vandermesis.NotkiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Notki;
+			};
+			name = Debug;
+		};
+		26AF3BA528DE9B4500C12A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vandermesis.NotkiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Notki;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26AF3B6E28DE9B4400C12A3D /* Build configuration list for PBXProject "Notki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26AF3B9B28DE9B4500C12A3D /* Debug */,
+				26AF3B9C28DE9B4500C12A3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26AF3B9D28DE9B4500C12A3D /* Build configuration list for PBXNativeTarget "Notki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26AF3B9E28DE9B4500C12A3D /* Debug */,
+				26AF3B9F28DE9B4500C12A3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26AF3BA028DE9B4500C12A3D /* Build configuration list for PBXNativeTarget "NotkiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26AF3BA128DE9B4500C12A3D /* Debug */,
+				26AF3BA228DE9B4500C12A3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26AF3BA328DE9B4500C12A3D /* Build configuration list for PBXNativeTarget "NotkiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26AF3BA428DE9B4500C12A3D /* Debug */,
+				26AF3BA528DE9B4500C12A3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BAE7B7B62A9BFD9C006B7B09 /* Notki.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BAE7B7B72A9BFD9C006B7B09 /* Notki.xcdatamodel */,
+			);
+			currentVersion = BAE7B7B72A9BFD9C006B7B09 /* Notki.xcdatamodel */;
+			path = Notki.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 26AF3B6B28DE9B4400C12A3D /* Project object */;
+}
